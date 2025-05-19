@@ -104,9 +104,9 @@
 }
 
 .road:hover::after {
-    transform: rotate(51deg) scale(1.6);
+    transform: rotate(51deg);
 }
 
 .road:hover::before {
-    transform: rotate(-51deg) scale(1.6);
+    transform: rotate(-51deg);
 }
