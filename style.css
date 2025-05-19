@@ -1,0 +1,112 @@
+* {
+    box-sizing: content-box;
+}
+
+.wild-romeo {
+    flex-direction: column;
+    display: flex;
+    max-width: 700px;
+}
+
+.road {
+    position: relative;
+}
+
+.road img {
+    width: 100%;
+}
+
+
+.text {
+    position: absolute;
+    color: rgb(135, 227, 255);
+    font-size: 50px;
+    top: 10%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+
+.desc-1 {
+    position: absolute;
+    color: rgb(135, 227, 255);
+    font-size: 30px;
+    top: 50%;
+    left:13%;
+    transform: translate(-50%, -50%);
+    
+    font-family: "Monda", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.road::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(184, 232, 247);
+    transition: all 0.5s ease-in-out;
+}
+
+.road::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(184, 232, 247);
+    transition: all 0.5s ease-in-out;
+}
+
+.desc-2 {
+    position: absolute;
+    color: rgb(135, 227, 255);
+    font-size: 30px;
+    top: 55%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    
+    font-family: "Monda", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#wild {
+    font-size: 60px;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#romeo {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wild-romeo:hover .text {
+    transition: all 0.5s ease-in-out;
+    transform: translate(-50%, -50%) translateY(30px);
+}
+
+.wild-romeo:hover .desc-1 {
+    transition: all 0.5s ease-in-out;
+    transform: translate(-50%, -50%) translateY(-30px);
+}
+
+.wild-romeo:hover .desc-2 {
+    transition: all 0.5s ease-in-out;
+    transform: translate(-50%, -50%) translateY(-30px);
+}
+
+.road:hover::after {
+    transform: rotate(51deg) scale(1.6);
+}
+
+.road:hover::before {
+    transform: rotate(-51deg) scale(1.6);
+}
